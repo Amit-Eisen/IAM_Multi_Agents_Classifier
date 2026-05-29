@@ -1,0 +1,16 @@
+{
+  "Version": "2022-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "dynamodb:PutItem"
+      ],
+      "Resource": [
+        "arn:aws:s3:::mybucket/*",
+        "arn:aws:dynamodb:us-west-2:123456789012:table/my-table"
+      ]
+    }
+  ]
+}

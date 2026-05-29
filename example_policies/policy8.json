@@ -1,0 +1,39 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowEC2ReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "ec2:Get*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowS3FullAccess",
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowIAMRead",
+      "Effect": "Allow",
+      "Action": [
+        "iam:GetUser",
+        "iam:GetRole",
+        "iam:ListUsers"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DangerousIAMWrite",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateAccessKey",
+        "iam:PutUserPolicy"
+      ],
+      "Resource": "arn:aws:iam::123456789012:user/*"
+    }
+  ]
+}

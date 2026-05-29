@@ -1,0 +1,37 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DataExposureRisk",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:GetBucketAcl",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*",
+        "arn:aws:s3:::*/*"
+      ]
+    },
+    {
+      "Sid": "DatabaseFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "rds:*",
+        "dynamodb:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SecretsAccess",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
