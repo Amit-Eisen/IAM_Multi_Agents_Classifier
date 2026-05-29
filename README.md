@@ -38,7 +38,7 @@ If the LLM fails for any reason, there's fallback logic using deterministic scor
 
 ```bash
 # Clone and setup
-git clone https://github.com/YOUR_USERNAME/iam-policy-analyzer.git
+git clone https://github.com/Amit-Eisen/IAM_Multi_Agents_Classifier.git
 cd iam-policy-analyzer
 
 python -m venv venv
