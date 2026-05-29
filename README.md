@@ -159,4 +159,4 @@ MIT
 
 ---
 
-**Author:** Amit Eisen | [LinkedIn](your-linkedin-url) | [Email](eisenamit96@gmail.com)
+**Author:** Amit Eisen | [LinkedIn](https://www.linkedin.com/in/amit-eisen/) | [Email](eisenamit96@gmail.com)
